@@ -29,14 +29,15 @@ body {
 .container h1 {
   margin-bottom: 20px;
   color: #38bdf8;
+  font-size: 32px;
 }
 
 /* Menu items */
 .menu-item {
-  background: #1f2933;
+  background: #202d3a;
   padding: 12px;
   margin: 10px 0;
-  border-radius: 6px;
+  border-radius: 2px;
   cursor: pointer;
   transition: background 0.3s;
 }
