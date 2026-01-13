@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gaming UI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0d1c22, #203a43, #2c5364);
+        color: #fff;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .game-ui {
+        width: 900px;
+        background: #111;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+      }
+
+      /* Header */
+      .header {
+        background: #1f1f1f;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header h1 {
+        font-size: 24px;
+        color: #00ffcc;
+      }
+
+      .player-info {
+        font-size: 14px;
+        opacity: 0.9;
+      }
+
+      /* Main layout */
+      .main {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        height: 400px;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        background: #181818;
+        padding: 20px;
+      }
+
+      .menu-item {
+        padding: 12px;
+        margin-bottom: 10px;
+        background: #222;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+      }
+
+      .menu-item:hover {
+        background: #00ffcc;
+        color: #000;
+        transform: translateX(5px);
+      }
+
+      /* Game area */
+      .game-area {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+      }
+
+      .card {
+        background: #222;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 25px rgba(0, 255, 204, 0.4);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+        color: #00ffcc;
+      }
+
+      .card p {
+        font-size: 14px;
+        opacity: 0.8;
+      }
+
+      /* Footer */
+      .footer {
+        background: #1f1f1f;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        background: #00ffcc;
+        color: #000;
+        cursor: pointer;
+        font-weight: bold;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 255, 204, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="game-ui">
+      <div class="header">
+        <h1>Game Dashboard</h1>
+        <div class="player-info">Player: Alex | Level 12</div>
+      </div>
+
+      <div class="main">
+        <div class="sidebar">
+          <div class="menu-item">🎮 Start Game</div>
+          <div class="menu-item">🧙 Characters</div>
+          <div class="menu-item">🗺 Maps</div>
+          <div class="menu-item">⚙ Settings</div>
+        </div>
+
+        <div class="game-area">
+          <div class="card">
+            <h3>Mission ONE</h3>
+            <p>Forest Battle</p>
+          </div>
+          <div class="card">
+            <h3>Mission TWO</h3>
+            <p>Desert Strike</p>
+          </div>
+          <div class="card">
+            <h3>Mission THREE</h3>
+            <p>Night Raid</p>
+          </div>
+          <div class="card">
+            <h3>Mission FOUR</h3>
+            <p>Urban Chaos</p>
+          </div>
+          <div class="card">
+            <h3>Mission FIVE</h3>
+            <p>Final Boss</p>
+          </div>
+          <div class="card">
+            <h3>Locked</h3>
+            <p>Coming Soon</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>Coins: 3500</span>
+        <button class="btn">Play Now</button>
+      </div>
+    </div>
+  </body>
+</html>
