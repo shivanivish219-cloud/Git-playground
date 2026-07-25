@@ -1,0 +1,19 @@
+.sidebar {
+  background: #181818;
+  padding: 20px;
+}
+
+.menu-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #222;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-item:hover {
+  background: #00ffcc;
+  color: #000;
+  transform: translateX(5px);
+}
