@@ -1,0 +1,30 @@
+.game-area {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: #222;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 255, 204, 0.4);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
